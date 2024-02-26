@@ -6,7 +6,6 @@
 <body>
     <h1 id="myElement">Original Text</h1>
     <button onclick="updatetext()">Update Text</button>
-    <button onclick="updatestyle()">Update Style</button>
     <br />
     <div id="konten1">
         <h1 id="title1">Ini adalah Create Element</h1>
@@ -14,18 +13,10 @@
     </div>
     <button onclick="newElement()">Create Element</button>
     <button onclick="removeElement()">Remove Element</button>
-    <br />
-    
     <script>
         function updatetext(){
             const element = document.getElementById("myElement");
             element.innerText = "Text Updated";
-        }
-        function updatestyle(){
-            const element = document.getElementById("myElement");
-            element.setAttribute("style", "font-size: 18px");
-
-            element.style.color = "blue";
         }
 
         function newElement(){
